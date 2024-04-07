@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333; /* Changed text color to dark grey */
+}
+
+.game-container {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.turn-box {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    background-color: #ffcc00; /* Yellow */
+    margin: 10px;
+    line-height: 50px;
+    cursor: pointer;
+    color: #fff; /* White text color */
+}
+
+.turn-box.active {
+    background-color: #ff6600; /* Orange */
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-top: 20px;
+}
+
+.box {
+    background-color: #66ccff; /* Blue */
+    width: 100px;
+    height: 100px;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #fff; /* White text color */
+}
+
+.box:hover {
+    background-color: #3399ff; /* Light blue */
+}
+
+#results {
+    margin-top: 20px;
+    color: #009933; /* Green */
+    font-size: 24px; /* Changed font size */
+}
+
+#play-again {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #ff5050; /* Red */
+    color: #fff; /* White text color */
+    border: none;
+    cursor: pointer;
+}
+
+#play-again:hover {
+    background-color: #ff3333; /* Light red */
+}
